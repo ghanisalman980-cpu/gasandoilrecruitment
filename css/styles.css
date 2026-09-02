@@ -72,13 +72,26 @@ select:focus-visible,
   top: 0.75rem;
 }
 
-.staging-bar {
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
   background: var(--navy-deep);
+  padding: 0.45rem var(--space);
+}
+
+.staging-bar {
+  margin: 0;
   color: var(--gold-soft);
   font-size: 0.8125rem;
   letter-spacing: 0.02em;
-  text-align: center;
-  padding: 0.45rem var(--space);
+}
+
+.topbar .phone-link {
+  color: var(--gold-soft);
+  font-size: 0.85rem;
+  text-decoration: none;
 }
 
 .wrap {
@@ -375,7 +388,7 @@ ul.plain li + li {
 .crumbs li:not(:last-child)::after {
   content: "/";
   margin-left: 0.35rem;
-  color: var(--line);
+  color: var(--stone);
 }
 
 .callout {
@@ -459,6 +472,12 @@ button[type="submit"] {
 }
 
 @media (max-width: 820px) {
+  .topbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
   .nav-toggle-label {
     display: inline-block;
   }
