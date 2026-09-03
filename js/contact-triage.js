@@ -12,6 +12,7 @@
   var laneSelect = document.getElementById("lane");
   var engagementSelect = document.getElementById("engagement");
   var contractOption = document.getElementById("engagement-contract");
+  var engagementLocked = document.getElementById("engagement-locked-value");
   var commissioningNote = document.getElementById("commissioning-note");
   var subjectInput = document.getElementById("email-subject");
   var replyToInput = document.getElementById("reply-to");
@@ -52,14 +53,29 @@
   }
 
   function syncCommissioning() {
-    var lock = Boolean(employerBlock && !employerBlock.hidden && isCommissioning());
+    var employerActive = Boolean(employerBlock && !employerBlock.hidden);
+    var lock = employerActive && isCommissioning();
 
-    if (engagementSelect && lock) {
-      engagementSelect.value = "Permanent / staff";
+    if (engagementSelect) {
+      if (lock) {
+        engagementSelect.value = "Permanent / staff";
+        engagementSelect.disabled = true;
+        if (contractOption && contractOption.parentNode) {
+          contractOption.parentNode.removeChild(contractOption);
+        }
+      } else if (employerActive) {
+        engagementSelect.disabled = false;
+        if (contractOption && !contractOption.parentNode) {
+          engagementSelect.appendChild(contractOption);
+        }
+      }
     }
-    if (contractOption) {
-      contractOption.disabled = lock;
+
+    if (engagementLocked) {
+      engagementLocked.disabled = !lock;
+      engagementLocked.value = "Permanent / staff";
     }
+
     if (commissioningNote) {
       commissioningNote.hidden = !lock;
     }

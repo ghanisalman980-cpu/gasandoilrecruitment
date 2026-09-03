@@ -552,6 +552,12 @@ input[type="checkbox"] {
   min-height: 8.5rem;
 }
 
+.triage-form select:disabled {
+  color: var(--ink);
+  background: var(--cream);
+  cursor: not-allowed;
+}
+
 .triage-form button[type="submit"] {
   min-height: 2.85rem;
   padding: 0.8rem 1.2rem;
