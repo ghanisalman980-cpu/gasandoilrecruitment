@@ -33,5 +33,4 @@ Existing GCC markets (Dubai, Abu Dhabi, Bahrain, Qatar) are named once in the fo
 
 - (0044) 203 718 9976
 - info@gasandoilrecruitment.com
-- UK office (affiliation): Elmtree Court, Elm Tree Road, London NW8 9JT · Abarrane Limited
-- Malaysian office: 40A Jalan Melati 21, Taman Sri Melati, 68100 Batu Caves, Selangor · Zeus International Group SDN. BHD.
+- Office: Headquarters — London, United Kingdom · Elmtree Court, Elm Tree Road, London NW8 9JT · Abarrane Limited
