@@ -9,29 +9,29 @@ Static HTML hub for [gasandoilrecruitment.com](https://www.gasandoilrecruitment.
 - Output directory: `/`
 - Production branch: review via pull request, then merge to `main` when you want the staging Pages project to update
 
-This repo is the staging project. Keep `robots.txt` as `Disallow: /` and `_headers` `X-Robots-Tag: noindex, nofollow` until go-live is explicitly authorised.
+This repo is the staging project. Keep `robots.txt` as `Disallow: /` and `_headers` `X-Robots-Tag: noindex, nofollow, nosnippet` until go-live is explicitly authorised.
 
 ## URLs
 
-Extensionless paths (`/about`, `/drilling-wells-leadership-saudi-arabia`, …). Each folder holds `index.html`. `_redirects` sends `.html` aliases and leftover `/careers` `/partners` `/employers` `/vacancies` to hub URLs with 308.
+Extensionless paths (`/about`, `/drilling-wells-leadership-saudi-arabia`, …). Each folder holds `index.html`. `_redirects` sends `.html` aliases and leftover `/careers` `/partners` `/employers` `/vacancies` to hub URLs with 308. The retired generic O&G path `/oil-and-gas-recruitment-saudi-arabia` (and its `.html` alias) 308s to `/`.
 
-## Hub map
+## Hub map (locked 3 Sep 2026)
 
-| Path | Role |
+| Path | Primary query |
 | --- | --- |
-| `/` | British international recruiter into KSA / Riyadh |
-| `/drilling-wells-leadership-saudi-arabia` | Primary money page — wells leadership |
-| `/oil-and-gas-recruitment-saudi-arabia` | Senior/Western specialist, not the generic head term |
-| `/project-epc-leadership-saudi-arabia` | Perm-led project / EPC leadership |
-| `/mining-epcm-recruitment-saudi-arabia` | Mining engineer / EPCM vacancy intent |
-| `/commissioning-startup-saudi-arabia` | Permanent commissioning only (secondary) |
+| `/` | international recruitment agencies in saudi arabia |
+| `/executive-recruitment-saudi-arabia` | executive recruitment saudi arabia |
+| `/drilling-wells-leadership-saudi-arabia` | drilling superintendent recruitment saudi arabia |
+| `/project-epc-leadership-saudi-arabia` | oil and gas project director recruitment saudi arabia |
+| `/mining-epcm-recruitment-saudi-arabia` | mining engineer and EPCM recruitment Saudi Arabia |
+| `/commissioning-startup-saudi-arabia` | commissioning manager recruitment saudi arabia (perm / staff only) |
 | `/about` `/contact` | House and NAP |
 
-Existing GCC markets (Dubai, Abu Dhabi, Bahrain, Qatar) are named once in the footer as service area. No city clone pages. Renewables held.
+Existing GCC markets (Dubai, Abu Dhabi, Bahrain, Qatar) are named once in the footer as service area. No city clone pages. Do not target the generic “oil and gas recruitment agencies in saudi arabia” head term.
 
 ## Brand contacts (do not replace)
 
 - (0044) 203 718 9976
 - info@gasandoilrecruitment.com
-- UK office (affiliation): Elmtree Court, Elm Tree Road, London NW8 9JT
-- Malaysian office: 40A Jalan Melati 21, Taman Sri Melati, 68100 Batu Caves, Selangor
+- UK office (affiliation): Elmtree Court, Elm Tree Road, London NW8 9JT · Abarrane Limited
+- Malaysian office: 40A Jalan Melati 21, Taman Sri Melati, 68100 Batu Caves, Selangor · Zeus International Group SDN. BHD.

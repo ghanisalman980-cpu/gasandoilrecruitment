@@ -3,21 +3,19 @@
 > British international recruiter (Abarrane Limited; public face Peter Smith) placing Western senior oil & gas, mining and EPCM people into Saudi Arabia — especially Riyadh — and serving existing GCC markets from one brand hub. High-ticket, scarce roles only. Staging site is noindex until the owner authorises go-live.
 
 ## Positioning
-Gas and Oil Recruitment is a specialist energy desk, not a volume Gulf job board and not a generic “oil and gas recruitment agency Saudi Arabia” page. We send Western engineers and senior personnel into the Gulf one-by-one or in bulk, contract or permanent, where the role is scarce and quota allows. We do not promise to bypass Saudization. Engineering localisation of 30% (SCE accreditation; SAR 8,000 floor) has been in force since 30 June 2026.
+Gas and Oil Recruitment is a specialist energy desk, not a volume Gulf job board. We send Western engineers and senior personnel into the Gulf one-by-one or in bulk, contract or permanent, where the role is scarce and quota allows. We do not promise to bypass Saudization. Engineering localisation of 30% across 46 professions (SCE accreditation; SAR 8,000 floor) has been in force since 30 June 2026. Project-management professions face 70% localisation from 14 February 2027.
 
-Primary commercial focus: drilling and wells leadership into the Kingdom (superintendent, well-site, completions leads) — vacancy and crewing intent, not junior drilling-engineer volume already owned by large panels.
+The home-page primary query is “international recruitment agencies in Saudi Arabia” (British proxy). “Recruitment agencies in Saudi Arabia” is a mixed-intent hub term only — not the #1 bet. The generic “oil and gas recruitment agencies in Saudi Arabia” string is contested and is not a money page; that URL 308s to home.
 
-Secondary: senior oil & gas project / EPC leadership (permanent-led, tightly scoped — not generic executive search); mining engineer and EPCM leadership against real Ma'aden-ecosystem demand; permanent commissioning and start-up only (contract day-rate commissioning is the wrong model for KSA). Renewables are held for a later phase.
-
-British / UK / London language is trust copy for Western-HQ buyers (oil and gas recruitment agency; mining recruitment agency; energy executive search). The searchable KSA proxy for that British identity is “international” recruitment.
+British / UK / London language is trust copy for Western-HQ buyers (oil and gas recruitment agency; mining recruitment agency; energy executive search). It lives on the home page, not as extra URLs.
 
 ## Pages
-- [Home](https://www.gasandoilrecruitment.com/): British international recruiter into Saudi Arabia / Riyadh
-- [Senior oil & gas specialists](https://www.gasandoilrecruitment.com/oil-and-gas-recruitment-saudi-arabia): Western senior/scarce O&G, not the generic agency head term
-- [Drilling & wells leadership](https://www.gasandoilrecruitment.com/drilling-wells-leadership-saudi-arabia): primary money page
-- [Project & EPC leadership](https://www.gasandoilrecruitment.com/project-epc-leadership-saudi-arabia): perm-led project directors and EPC leads
-- [Mining & EPCM](https://www.gasandoilrecruitment.com/mining-epcm-recruitment-saudi-arabia): mining engineer / EPCM vacancy intent
-- [Commissioning & start-up (perm)](https://www.gasandoilrecruitment.com/commissioning-startup-saudi-arabia): secondary, permanent only
+- [Home](https://www.gasandoilrecruitment.com/): international recruitment agencies in Saudi Arabia
+- [Executive recruitment](https://www.gasandoilrecruitment.com/executive-recruitment-saudi-arabia): executive recruitment Saudi Arabia
+- [Drilling superintendent](https://www.gasandoilrecruitment.com/drilling-wells-leadership-saudi-arabia): drilling superintendent recruitment Saudi Arabia
+- [Project director](https://www.gasandoilrecruitment.com/project-epc-leadership-saudi-arabia): oil and gas project director recruitment Saudi Arabia
+- [Mining & EPCM](https://www.gasandoilrecruitment.com/mining-epcm-recruitment-saudi-arabia): mining engineer and EPCM recruitment Saudi Arabia
+- [Commissioning manager](https://www.gasandoilrecruitment.com/commissioning-startup-saudi-arabia): commissioning manager recruitment Saudi Arabia — permanent / staff only; no published day-rates
 - [About](https://www.gasandoilrecruitment.com/about)
 - [Contact](https://www.gasandoilrecruitment.com/contact)
 
@@ -27,5 +25,5 @@ Saudi Arabia (Riyadh and the Kingdom) is the target market. We also place into D
 ## Contact
 - Phone: (0044) 203 718 9976
 - Email: info@gasandoilrecruitment.com
-- UK office (affiliation): Elmtree Court, Elm Tree Road, London NW8 9JT
-- Malaysian office: 40A Jalan Melati 21, Taman Sri Melati, 68100 Batu Caves, Selangor
+- UK office (affiliation): Elmtree Court, Elm Tree Road, London NW8 9JT · Abarrane Limited
+- Malaysian office: 40A Jalan Melati 21, Taman Sri Melati, 68100 Batu Caves, Selangor · Zeus International Group SDN. BHD.
