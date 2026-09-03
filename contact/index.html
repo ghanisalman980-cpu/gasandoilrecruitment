@@ -109,7 +109,7 @@
       <p class="kicker">Employers first</p>
       <h1>Retain us for a scarce Saudi or GCC seat</h1>
       <hr class="rule">
-      <p class="dek">Telephone and email are the brand channels. This staging hub has no third-party tracking snippet. Open your mail client from the form, or write directly. Candidates with a senior CV may use the same inbox.</p>
+      <p class="dek">Telephone and the form below are the brand channels. Say whether you are hiring in the Kingdom, staffing a KSA or GCC project from a Western headquarters, or a senior candidate with a scarce CV. The brief goes to the brand inbox — not a personal address.</p>
     </div>
   </section>
 
@@ -128,29 +128,150 @@
             <p>40A Jalan Melati 21, Taman Sri Melati, 68100 Batu Caves, Selangor<br>Zeus International Group SDN. BHD.</p>
           </div>
           <div class="panel">
-            <h2>Email a brief</h2>
-            <p class="note">The button opens your own email client addressed to the brand inbox. Nothing is stored on this site.</p>
-            <form action="mailto:info@gasandoilrecruitment.com" method="post" enctype="text/plain">
-              <label for="name">Name</label>
-              <input id="name" name="Name" type="text" autocomplete="name" required>
+            <h2>Send the brief</h2>
+            <p class="note">The form posts to the brand inbox. Telephone if the seat will not wait for email.</p>
+            <noscript>
+              <p class="note">JavaScript shows the matching fields after “I am…”. If scripts are off, telephone (0044) 203 718 9976 or write to info@gasandoilrecruitment.com.</p>
+            </noscript>
+            <form id="triage-form" class="triage-form" action="https://formsubmit.co/info@gasandoilrecruitment.com" method="POST">
+              <input type="hidden" name="_subject" id="email-subject" value="[Enquiry] Gas and Oil Recruitment brief">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_replyto" id="reply-to" value="">
+              <input type="hidden" name="_next" id="form-next" value="">
+              <input type="hidden" name="Triage" id="triage-label" value="">
 
-              <label for="company">Company</label>
-              <input id="company" name="Company" type="text" autocomplete="organization">
+              <p class="hp" aria-hidden="true">
+                <label for="website">Leave this field empty</label>
+                <input id="website" name="_honey" type="text" tabindex="-1" autocomplete="off">
+              </p>
 
-              <label for="lane">Lane</label>
-              <select id="lane" name="Lane">
-                <option value="Executive recruitment">Executive recruitment</option>
-                <option value="Drilling superintendent / wells leadership">Drilling superintendent / wells leadership</option>
-                <option value="Oil and gas project director">Oil and gas project director</option>
-                <option value="Mining engineer or EPCM">Mining engineer or EPCM</option>
-                <option value="Permanent commissioning manager">Permanent commissioning manager</option>
-                <option value="Other senior hire">Other senior hire</option>
-              </select>
+              <fieldset class="choice-set">
+                <legend>I am…</legend>
+                <div class="choice-list">
+                  <label class="choice">
+                    <input type="radio" name="I am" value="Hiring in the Kingdom (operator / EPC / in-Kingdom entity)" data-triage="employer" required>
+                    <span>Hiring in the Kingdom (operator / EPC / in-Kingdom entity)</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="I am" value="Western HQ staffing a KSA / GCC project" data-triage="employer" required>
+                    <span>Western HQ staffing a KSA / GCC project</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="I am" value="A senior candidate with a scarce CV" data-triage="candidate" required>
+                    <span>A senior candidate with a scarce CV</span>
+                  </label>
+                </div>
+              </fieldset>
 
-              <label for="brief">Brief</label>
-              <textarea id="brief" name="Brief" rows="7" required placeholder="Seat, location (Riyadh / Kingdom / GCC), permanent or contract, one person or a campaign, quota constraints you already know."></textarea>
+              <div id="employer-fields" class="form-block" hidden>
+                <label for="employer-name">Name</label>
+                <input id="employer-name" name="Name" type="text" autocomplete="name">
 
-              <button class="btn btn-primary" type="submit">Open email to the desk</button>
+                <label for="company">Company</label>
+                <input id="company" name="Company" type="text" autocomplete="organization">
+
+                <label for="work-email">Work email</label>
+                <input id="work-email" name="Work email" type="email" autocomplete="email">
+
+                <label for="employer-phone">Phone</label>
+                <input id="employer-phone" name="Phone" type="tel" autocomplete="tel">
+
+                <label for="lane">Lane</label>
+                <select id="lane" name="Lane">
+                  <option value="" disabled selected>Select a lane</option>
+                  <option value="Executive">Executive</option>
+                  <option value="Drilling superintendent">Drilling superintendent</option>
+                  <option value="Project director">Project director</option>
+                  <option value="Mining or EPCM">Mining or EPCM</option>
+                  <option value="Permanent commissioning manager">Permanent commissioning manager</option>
+                  <option value="Other senior">Other senior</option>
+                </select>
+
+                <label for="engagement">Permanent or contract</label>
+                <select id="engagement" name="Engagement">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="Permanent / staff">Permanent / staff</option>
+                  <option value="Contract" id="engagement-contract">Contract</option>
+                </select>
+                <input type="hidden" id="engagement-locked-value" name="Engagement" value="Permanent / staff" disabled>
+                <p id="commissioning-note" class="form-note" hidden>We place commissioning managers on a permanent or staff basis. We do not take commissioning day-rate briefs.</p>
+
+                <label for="seat-location">Location of the seat</label>
+                <select id="seat-location" name="Location of the seat">
+                  <option value="" disabled selected>Select a location</option>
+                  <option value="Riyadh">Riyadh</option>
+                  <option value="Eastern Province">Eastern Province</option>
+                  <option value="Other Kingdom">Other Kingdom</option>
+                  <option value="GCC campaign">GCC campaign</option>
+                </select>
+
+                <label for="seat-title">Seat title</label>
+                <input id="seat-title" name="Seat title" type="text">
+
+                <fieldset class="choice-set">
+                  <legend>One person or a campaign</legend>
+                  <div class="choice-list">
+                    <label class="choice">
+                      <input type="radio" name="Scope" value="One person">
+                      <span>One person</span>
+                    </label>
+                    <label class="choice">
+                      <input type="radio" name="Scope" value="A campaign">
+                      <span>A campaign</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <label for="quota">Quota / Saudization headroom you already know <span class="note">(optional)</span></label>
+                <input id="quota" name="Quota / Saudization headroom" type="text" data-optional="true">
+
+                <label for="mandate-notes">Mandate notes</label>
+                <textarea id="mandate-notes" name="Mandate notes" rows="6" placeholder="Reporting line, owner or contractor side, timing, and any constraint already in writing."></textarea>
+              </div>
+
+              <div id="candidate-fields" class="form-block" hidden>
+                <label for="candidate-name">Name</label>
+                <input id="candidate-name" name="Name" type="text" autocomplete="name">
+
+                <label for="candidate-email">Email</label>
+                <input id="candidate-email" name="Email" type="email" autocomplete="email">
+
+                <label for="candidate-phone">Phone</label>
+                <input id="candidate-phone" name="Phone" type="tel" autocomplete="tel">
+
+                <label for="discipline">Discipline / last title</label>
+                <input id="discipline" name="Discipline / last title" type="text">
+
+                <fieldset class="choice-set">
+                  <legend>Open to Saudi Arabia</legend>
+                  <div class="choice-list">
+                    <label class="choice">
+                      <input type="radio" name="Open to Saudi Arabia" value="Yes">
+                      <span>Yes</span>
+                    </label>
+                    <label class="choice">
+                      <input type="radio" name="Open to Saudi Arabia" value="No">
+                      <span>No</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <label for="preference">Contract or permanent preference</label>
+                <select id="preference" name="Contract or permanent preference">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="Permanent">Permanent</option>
+                  <option value="Contract">Contract</option>
+                  <option value="Either">Either</option>
+                </select>
+
+                <label for="cv-link">Link to CV or LinkedIn</label>
+                <input id="cv-link" name="CV or LinkedIn" type="url" inputmode="url" autocomplete="url" placeholder="https://">
+
+                <label for="availability">One-line availability</label>
+                <input id="availability" name="Availability" type="text" placeholder="Notice period, or a month you can start.">
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send to the desk</button>
             </form>
           </div>
         </div>
@@ -199,5 +320,6 @@
       <p class="legal">Service area beyond the Kingdom: we also place Western senior energy people into Dubai, Abu Dhabi, Bahrain and Qatar from this same hub — no separate city sites. Staging only. Not live. Not indexed.</p>
     </div>
   </footer>
+  <script src="/js/contact-triage.js"></script>
 </body>
 </html>
