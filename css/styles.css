@@ -310,6 +310,10 @@ main {
   padding: 1.25rem 1.3rem;
 }
 
+.nap {
+  max-width: 28rem;
+}
+
 .lane {
   display: flex;
   flex-direction: column;
