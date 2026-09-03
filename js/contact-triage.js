@@ -89,8 +89,8 @@
       return "[Candidate]";
     }
     if (triage === "employer") {
-      lane = laneSelect && laneSelect.value ? laneSelect.value : "Employer";
-      return "[Employer · " + lane + "]";
+      lane = laneSelect && laneSelect.value ? laneSelect.value : "";
+      return lane ? "[Employer · " + lane + "]" : "[Employer]";
     }
     return "[Enquiry]";
   }
