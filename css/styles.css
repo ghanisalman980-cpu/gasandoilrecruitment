@@ -399,6 +399,18 @@ ul.plain li + li {
   border-left: 3px solid var(--gold);
 }
 
+/* House-true proof block — keep copy in lockstep across money pages */
+.proof {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  padding: 1.25rem 1.3rem;
+}
+
+.proof > .kicker {
+  margin-bottom: 0.45rem;
+}
+
 .site-footer {
   background: var(--navy);
   color: var(--cream);
