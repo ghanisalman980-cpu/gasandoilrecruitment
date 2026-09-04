@@ -10,14 +10,15 @@ The home-page primary query is “international recruitment agencies in Saudi Ar
 British / UK / London language is trust copy for Western-HQ buyers (oil and gas recruitment agency; mining recruitment agency; energy executive search). It lives on the home page, not as extra URLs.
 
 ## Pages
-- [Home](https://www.gasandoilrecruitment.com/): international recruitment agencies in Saudi Arabia
-- [Executive recruitment](https://www.gasandoilrecruitment.com/executive-recruitment-saudi-arabia): executive recruitment Saudi Arabia
-- [Drilling superintendent](https://www.gasandoilrecruitment.com/drilling-wells-leadership-saudi-arabia): drilling superintendent recruitment Saudi Arabia
-- [Project director](https://www.gasandoilrecruitment.com/project-epc-leadership-saudi-arabia): oil and gas project director recruitment Saudi Arabia
-- [Mining & EPCM](https://www.gasandoilrecruitment.com/mining-epcm-recruitment-saudi-arabia): mining engineer and EPCM recruitment Saudi Arabia
-- [Commissioning manager](https://www.gasandoilrecruitment.com/commissioning-startup-saudi-arabia): commissioning manager recruitment Saudi Arabia — permanent / staff only; no published day-rates
-- [About](https://www.gasandoilrecruitment.com/about)
-- [Contact](https://www.gasandoilrecruitment.com/contact)
+Staging host until go-live (Drupal still owns gasandoilrecruitment.com). Paths are extensionless.
+- [Home](https://gasandoilrecruitment.pages.dev/): international recruitment agencies in Saudi Arabia
+- [Executive recruitment](https://gasandoilrecruitment.pages.dev/executive-recruitment-saudi-arabia): executive recruitment Saudi Arabia
+- [Drilling superintendent](https://gasandoilrecruitment.pages.dev/drilling-wells-leadership-saudi-arabia): drilling superintendent recruitment Saudi Arabia
+- [Project director](https://gasandoilrecruitment.pages.dev/project-epc-leadership-saudi-arabia): oil and gas project director recruitment Saudi Arabia
+- [Mining & EPCM](https://gasandoilrecruitment.pages.dev/mining-epcm-recruitment-saudi-arabia): mining engineer and EPCM recruitment Saudi Arabia
+- [Commissioning manager](https://gasandoilrecruitment.pages.dev/commissioning-startup-saudi-arabia): commissioning manager recruitment Saudi Arabia — permanent / staff only; no published day-rates
+- [About](https://gasandoilrecruitment.pages.dev/about)
+- [Contact](https://gasandoilrecruitment.pages.dev/contact)
 
 ## Service area (no city clone pages)
 Saudi Arabia (Riyadh and the Kingdom) is the target market. We also place into Dubai, Abu Dhabi, Bahrain and Qatar from this same hub.

@@ -15,6 +15,13 @@ This repo is the staging project. Keep `robots.txt` as `Disallow: /` and `_heade
 
 Extensionless paths (`/about`, `/drilling-wells-leadership-saudi-arabia`, …). Each folder holds `index.html`. `_redirects` sends `.html` aliases and leftover `/careers` `/partners` `/employers` `/vacancies` to hub URLs with 308. The retired generic O&G path `/oil-and-gas-recruitment-saudi-arabia` (and its `.html` alias) 308s to `/`.
 
+Until the owner go-lives, crawl files match the host that actually serves this build:
+
+- `sitemap.xml` `<loc>` values and `robots.txt` `Sitemap:` use `https://gasandoilrecruitment.pages.dev/...` (extensionless). Do not point them at live `.com` Drupal URLs.
+- `llms.txt` page links use the same pages.dev host. Contact email stays `info@gasandoilrecruitment.com`. Office remains Headquarters — London (no Malaysia).
+
+Canonical, `og:url`, and JSON-LD keep `https://www.gasandoilrecruitment.com/` on purpose as ready-for-go-live identity. They are not crawl targets while `X-Robots-Tag: noindex` and `Disallow: /` stay in place. Switch sitemap/robots/llms to `.com` only when Drupal is off that host and this build is attached.
+
 ## Hub map (locked 3 Sep 2026)
 
 | Path | Primary query |
