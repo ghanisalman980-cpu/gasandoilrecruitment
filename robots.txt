@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: https://www.gasandoilrecruitment.com/sitemap.xml
+Sitemap: https://gasandoilrecruitment.pages.dev/sitemap.xml
