@@ -1,26 +1,21 @@
-# Gas and Oil Recruitment — staging hub
+# Gas and Oil Recruitment
 
-Static HTML hub for [gasandoilrecruitment.com](https://www.gasandoilrecruitment.com/). **Noindex until the owner says go live. Do not attach the live domain.**
+Static HTML hub for [gasandoilrecruitment.com](https://www.gasandoilrecruitment.com/). Live / indexable.
 
 ## Deploy (Cloudflare Pages)
 
 - Framework preset: none
 - Build command: empty
 - Output directory: `/`
-- Production branch: review via pull request, then merge to `main` when you want the staging Pages project to update
-
-This repo is the staging project. Keep `robots.txt` as `Disallow: /` and `_headers` `X-Robots-Tag: noindex, nofollow, nosnippet` until go-live is explicitly authorised.
+- Production branch: `main` (Cloudflare Pages redeploys on merge)
 
 ## URLs
 
 Extensionless paths (`/about`, `/drilling-wells-leadership-saudi-arabia`, …). Each folder holds `index.html`. `_redirects` sends `.html` aliases and leftover `/careers` `/partners` `/employers` `/vacancies` to hub URLs with 308. The retired generic O&G path `/oil-and-gas-recruitment-saudi-arabia` (and its `.html` alias) 308s to `/`.
 
-Until the owner go-lives, crawl files match the host that actually serves this build:
+Canonical, `og:url`, JSON-LD, `sitemap.xml` `<loc>` values, `robots.txt` `Sitemap:`, and `llms.txt` links use `https://www.gasandoilrecruitment.com/` (extensionless). Contact email stays `info@gasandoilrecruitment.com`. Office remains Headquarters — London (no Malaysia).
 
-- `sitemap.xml` `<loc>` values and `robots.txt` `Sitemap:` use `https://gasandoilrecruitment.pages.dev/...` (extensionless). Do not point them at live `.com` Drupal URLs.
-- `llms.txt` page links use the same pages.dev host. Contact email stays `info@gasandoilrecruitment.com`. Office remains Headquarters — London (no Malaysia).
-
-Canonical, `og:url`, and JSON-LD keep `https://www.gasandoilrecruitment.com/` on purpose as ready-for-go-live identity. They are not crawl targets while `X-Robots-Tag: noindex` and `Disallow: /` stay in place. Switch sitemap/robots/llms to `.com` only when Drupal is off that host and this build is attached.
+IndexNow key file is not in this repo yet — add after the custom domain is attached.
 
 ## Hub map (locked 3 Sep 2026)
 
