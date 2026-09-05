@@ -11,7 +11,7 @@ Static HTML hub for [gasandoilrecruitment.com](https://www.gasandoilrecruitment.
 
 ## URLs
 
-Extensionless paths (`/about`, `/drilling-wells-leadership-saudi-arabia`, …). Each folder holds `index.html`. `_redirects` sends `.html` aliases and leftover `/careers` `/partners` `/employers` `/vacancies` to hub URLs with 308. The retired generic O&G path `/oil-and-gas-recruitment-saudi-arabia` (and its `.html` alias) 308s to `/`.
+Extensionless paths (`/about`, `/drilling-wells-leadership-saudi-arabia`, …). Each folder holds `index.html`. `_redirects` keeps `.html` aliases as 308 and 301s retired Drupal/WordPress paths (plus trailing-slash and `/gasandoilrecruitment/` twins) onto hub URLs. Leftover `/partners` still 308s to `/about`. The retired generic O&G path `/oil-and-gas-recruitment-saudi-arabia` 301s to `/` (its `.html` alias stays 308).
 
 Canonical, `og:url`, JSON-LD, `sitemap.xml` `<loc>` values, `robots.txt` `Sitemap:`, and `llms.txt` links use `https://www.gasandoilrecruitment.com/` (extensionless). Contact email stays `info@gasandoilrecruitment.com`. Office remains Headquarters — London (no Malaysia).
 
