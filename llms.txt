@@ -10,20 +10,20 @@ The home-page primary query is “international recruitment agencies in Saudi Ar
 British / UK / London language is trust copy for Western-HQ buyers (oil and gas recruitment agency; mining recruitment agency; energy executive search). It lives on the home page, not as extra URLs.
 
 ## Pages
-Paths are extensionless.
+Inner pages use trailing-slash 200 URLs (Cloudflare Pages 308s the extensionless form).
 - [Home](https://www.gasandoilrecruitment.com/): international recruitment agencies in Saudi Arabia
-- [Executive recruitment](https://www.gasandoilrecruitment.com/executive-recruitment-saudi-arabia): executive recruitment Saudi Arabia
-- [Drilling superintendent](https://www.gasandoilrecruitment.com/drilling-wells-leadership-saudi-arabia): drilling superintendent recruitment Saudi Arabia
-- [Project director](https://www.gasandoilrecruitment.com/project-epc-leadership-saudi-arabia): oil and gas project director recruitment Saudi Arabia
-- [Mining & EPCM](https://www.gasandoilrecruitment.com/mining-epcm-recruitment-saudi-arabia): mining engineer and EPCM recruitment Saudi Arabia
-- [Commissioning manager](https://www.gasandoilrecruitment.com/commissioning-startup-saudi-arabia): commissioning manager recruitment Saudi Arabia — permanent / staff only; no published day-rates
-- [About](https://www.gasandoilrecruitment.com/about)
-- [Contact](https://www.gasandoilrecruitment.com/contact)
+- [Executive recruitment](https://www.gasandoilrecruitment.com/executive-recruitment-saudi-arabia/): executive recruitment Saudi Arabia
+- [Drilling superintendent](https://www.gasandoilrecruitment.com/drilling-wells-leadership-saudi-arabia/): drilling superintendent recruitment Saudi Arabia
+- [Project director](https://www.gasandoilrecruitment.com/project-epc-leadership-saudi-arabia/): oil and gas project director recruitment Saudi Arabia
+- [Mining & EPCM](https://www.gasandoilrecruitment.com/mining-epcm-recruitment-saudi-arabia/): mining engineer and EPCM recruitment Saudi Arabia
+- [Commissioning manager](https://www.gasandoilrecruitment.com/commissioning-startup-saudi-arabia/): commissioning manager recruitment Saudi Arabia — permanent / staff only; no published day-rates
+- [About](https://www.gasandoilrecruitment.com/about/)
+- [Contact](https://www.gasandoilrecruitment.com/contact/)
 
 ## Service area (no city clone pages)
 Saudi Arabia (Riyadh and the Kingdom) is the target market. We also place into Dubai, Abu Dhabi, Bahrain and Qatar from this same hub.
 
 ## Contact
-- Phone: (0044) 203 318 2020
+- Phone: 020 3318 2020
 - Email: info@gasandoilrecruitment.com
 - Office: Headquarters — London, United Kingdom · Elmtree Court, Elm Tree Road, London NW8 9JT · Abarrane Limited
