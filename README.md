@@ -2,6 +2,22 @@
 
 Static HTML hub for [gasandoilrecruitment.com](https://www.gasandoilrecruitment.com/). Live / indexable.
 
+## Local development
+
+This is a plain static site (no build step). To preview it locally with the same
+behaviour Cloudflare Pages applies in production — `_redirects` (301/308) and
+`_headers` (security + cache) — use the bundled Wrangler dev server:
+
+```
+npm install
+npm run dev
+```
+
+Then open http://127.0.0.1:8788/. `npm run dev` runs
+`wrangler pages dev .`, which serves the files and emulates the `_redirects` and
+`_headers` rules. Any static server (e.g. `python3 -m http.server`) will serve the
+pages too, but only Wrangler honours the redirect and header rules.
+
 ## Deploy (Cloudflare Pages)
 
 - Framework preset: none

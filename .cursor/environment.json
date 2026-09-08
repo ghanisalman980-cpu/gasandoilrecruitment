@@ -1,0 +1,16 @@
+{
+  "name": "Gas and Oil Recruitment (Cloudflare Pages static site)",
+  "install": "npm install",
+  "terminals": [
+    {
+      "name": "pages-dev",
+      "command": "npm run dev"
+    }
+  ],
+  "ports": [
+    {
+      "name": "Cloudflare Pages dev",
+      "port": 8788
+    }
+  ]
+}
