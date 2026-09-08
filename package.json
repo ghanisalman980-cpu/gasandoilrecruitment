@@ -1,0 +1,18 @@
+{
+  "name": "gasandoilrecruitment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static HTML hub for gasandoilrecruitment.com, deployed on Cloudflare Pages.",
+  "scripts": {
+    "dev": "wrangler pages dev . --port 8788 --ip 127.0.0.1 --compatibility-date=2026-09-08",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghanisalman980-cpu/gasandoilrecruitment.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^4.130.0"
+  }
+}

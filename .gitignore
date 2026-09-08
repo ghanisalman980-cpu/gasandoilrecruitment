@@ -1,0 +1,6 @@
+# Node / tooling
+node_modules/
+npm-debug.log*
+
+# Wrangler / Cloudflare local state
+.wrangler/
