@@ -1,29 +1,23 @@
 # Gas and Oil Recruitment
+# British international recruiter (Abarrane Limited). Western senior energy hires into Saudi Arabia and the GCC.
+# Canonical host: https://www.gasandoilrecruitment.com/
 
-> British international recruiter (Abarrane Limited; public face Peter Smith) placing Western senior oil & gas, mining and EPCM people into Saudi Arabia — especially Riyadh — and serving existing GCC markets from one brand hub. High-ticket, scarce roles only.
+> Public face: Peter Smith. HQ: Elmtree Court, Elm Tree Road, London NW8 9JT. Phone: +44 20 3318 2020. Email: info@gasandoilrecruitment.com.
 
-## Positioning
-Gas and Oil Recruitment is a specialist energy desk, not a volume Gulf job board. We send Western engineers and senior personnel into the Gulf one-by-one or in bulk, contract or permanent, where the role is scarce and quota allows. We do not promise to bypass Saudization. Engineering localisation of 30% across 46 professions (SCE accreditation; SAR 8,000 floor) has been in force since 30 June 2026. Project-management professions face 70% localisation from 14 February 2027.
+## Primary pages
 
-The home-page primary query is “international recruitment agencies in Saudi Arabia” (British proxy). “Recruitment agencies in Saudi Arabia” is a mixed-intent hub term only — not the #1 bet. The generic “oil and gas recruitment agencies in Saudi Arabia” string is contested and is not a money page; that URL 308s to home.
-
-British / UK / London language is trust copy for Western-HQ buyers (oil and gas recruitment agency; mining recruitment agency; energy executive search). It lives on the home page, not as extra URLs.
-
-## Pages
-Inner pages use trailing-slash 200 URLs (Cloudflare Pages 308s the extensionless form).
-- [Home](https://www.gasandoilrecruitment.com/): international recruitment agencies in Saudi Arabia
-- [Executive recruitment](https://www.gasandoilrecruitment.com/executive-recruitment-saudi-arabia/): executive recruitment Saudi Arabia
-- [Drilling superintendent](https://www.gasandoilrecruitment.com/drilling-wells-leadership-saudi-arabia/): drilling superintendent recruitment Saudi Arabia
-- [Project director](https://www.gasandoilrecruitment.com/project-epc-leadership-saudi-arabia/): oil and gas project director recruitment Saudi Arabia
-- [Mining & EPCM](https://www.gasandoilrecruitment.com/mining-epcm-recruitment-saudi-arabia/): mining engineer and EPCM recruitment Saudi Arabia
-- [Commissioning manager](https://www.gasandoilrecruitment.com/commissioning-startup-saudi-arabia/): commissioning manager recruitment Saudi Arabia — permanent / staff only; no published day-rates
+- [Home](https://www.gasandoilrecruitment.com/): Hub for international recruitment into Saudi Arabia
+- [Executive recruitment Saudi Arabia](https://www.gasandoilrecruitment.com/executive-recruitment-saudi-arabia/)
+- [Drilling superintendent / wells leadership](https://www.gasandoilrecruitment.com/drilling-wells-leadership-saudi-arabia/)
+- [Oil and gas project director / EPC](https://www.gasandoilrecruitment.com/project-epc-leadership-saudi-arabia/)
+- [Mining engineer and EPCM](https://www.gasandoilrecruitment.com/mining-epcm-recruitment-saudi-arabia/)
+- [Commissioning manager (permanent)](https://www.gasandoilrecruitment.com/commissioning-startup-saudi-arabia/)
 - [About](https://www.gasandoilrecruitment.com/about/)
 - [Contact](https://www.gasandoilrecruitment.com/contact/)
+- [Privacy policy](https://www.gasandoilrecruitment.com/privacy-policy/)
+- [Terms of use](https://www.gasandoilrecruitment.com/terms/)
 
-## Service area (no city clone pages)
-Saudi Arabia (Riyadh and the Kingdom) is the target market. We also place into Dubai, Abu Dhabi, Bahrain and Qatar from this same hub.
+## Notes for assistants
 
-## Contact
-- Phone: 020 3318 2020
-- Email: info@gasandoilrecruitment.com
-- Office: Headquarters — London, United Kingdom · Elmtree Court, Elm Tree Road, London NW8 9JT · Abarrane Limited
+- Employer-first desk. No Saudization / SCE bypass claims. No commissioning day-rates.
+- Do not invent reviews, ratings, client logos, placement counts, second offices, or fees.
