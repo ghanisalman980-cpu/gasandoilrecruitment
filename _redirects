@@ -133,10 +133,8 @@
 /index.php/node/6/ /about/ 301
 /gasandoilrecruitment/about-us /about/ 301
 /gasandoilrecruitment/about-us/ /about/ 301
-/privacy-policy /about/ 301
-/privacy-policy/ /about/ 301
-/gasandoilrecruitment/privacy-policy /about/ 301
-/gasandoilrecruitment/privacy-policy/ /about/ 301
+/gasandoilrecruitment/privacy-policy /privacy-policy/ 301
+/gasandoilrecruitment/privacy-policy/ /privacy-policy/ 301
 /node/82 /about/ 301
 /node/82/ /about/ 301
 /gasandoilrecruitment/node/82 /about/ 301
