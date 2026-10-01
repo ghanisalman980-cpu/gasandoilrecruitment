@@ -21,13 +21,15 @@ IndexNow key file is not in this repo yet — add after the custom domain is att
 
 | Path | Primary query |
 | --- | --- |
-| `/` | international recruitment agencies in saudi arabia |
+| `/` | recruitment agencies in saudi arabia |
 | `/executive-recruitment-saudi-arabia/` | executive recruitment saudi arabia |
 | `/drilling-wells-leadership-saudi-arabia/` | drilling superintendent recruitment saudi arabia |
 | `/project-epc-leadership-saudi-arabia/` | oil and gas project director recruitment saudi arabia |
 | `/mining-epcm-recruitment-saudi-arabia/` | mining engineer and EPCM recruitment Saudi Arabia |
 | `/commissioning-startup-saudi-arabia/` | commissioning manager recruitment saudi arabia (perm / staff only) |
 | `/about/` `/contact/` | House and NAP |
+
+Homepage `/` primary retargeted on Salman’s sign-off, 1 Oct 2026. Supporting, not primary: international recruitment agencies in saudi arabia (British / international desk). The public page stays Western oil and gas and energy leadership for KSA employers — the broader phrase is the search head, not a generic-agency positioning.
 
 Existing GCC markets (Dubai, Abu Dhabi, Bahrain, Qatar) are named once in the footer as service area. No city clone pages. Do not target the generic “oil and gas recruitment agencies in saudi arabia” head term.
 
