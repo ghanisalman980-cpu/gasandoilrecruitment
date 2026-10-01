@@ -37,4 +37,4 @@ Existing GCC markets (Dubai, Abu Dhabi, Bahrain, Qatar) are named once in the fo
 
 - 020 3318 2020
 - info@gasandoilrecruitment.com
-- Office: Headquarters — London, United Kingdom · Elmtree Court, Elm Tree Road, London NW8 9JT · Abarrane Limited
+- Office: Headquarters — London, United Kingdom · Elmtree Court, Elm Tree Road, London NW8 9JT
