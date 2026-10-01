@@ -29,7 +29,7 @@ IndexNow key file is not in this repo yet — add after the custom domain is att
 | `/commissioning-startup-saudi-arabia/` | commissioning manager recruitment saudi arabia (perm / staff only) |
 | `/about/` `/contact/` | House and NAP |
 
-Homepage `/` primary retargeted on Salman’s sign-off, 1 Oct 2026. Supporting, not primary: international recruitment agencies in saudi arabia (British / international desk). Oil and gas and energy employer-first positioning stays front and centre.
+Homepage `/` primary retargeted on Salman’s sign-off, 1 Oct 2026. Supporting, not primary: international recruitment agencies in saudi arabia (British / international desk). The public page stays Western oil and gas and energy leadership for KSA employers — the broader phrase is the search head, not a generic-agency positioning.
 
 Existing GCC markets (Dubai, Abu Dhabi, Bahrain, Qatar) are named once in the footer as service area. No city clone pages. Do not target the generic “oil and gas recruitment agencies in saudi arabia” head term.
 
