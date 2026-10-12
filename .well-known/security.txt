@@ -1,0 +1,5 @@
+Contact: mailto:hello@gasandoilrecruitment.com
+Expires: 2027-10-12T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.gasandoilrecruitment.com/.well-known/security.txt
+# Please report suspected vulnerabilities by email. Good-faith, non-destructive research only; no DoS, spam or social engineering.
