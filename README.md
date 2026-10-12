@@ -1,40 +1,46 @@
 # Gas and Oil Recruitment
 
-Static HTML hub for [gasandoilrecruitment.com](https://www.gasandoilrecruitment.com/). Live / indexable.
+Static HTML site for **[gasandoilrecruitment.com](https://www.gasandoilrecruitment.com/)**: a UK-branded (London desk) executive and senior recruitment service placing Western oil, gas, energy and mining leaders with employers in Saudi Arabia (KSA / Riyadh). **Live and indexed.**
 
-## Deploy (Cloudflare Pages)
+## Structure
 
-- Framework preset: none
-- Build command: empty
-- Output directory: `/`
-- Production branch: `main` (Cloudflare Pages redeploys on merge)
+| Path | Purpose |
+|---|---|
+| `/index.html` | Home: recruitment agencies in Saudi Arabia |
+| `/executive-recruitment-saudi-arabia/` | Executive recruitment |
+| `/drilling-wells-leadership-saudi-arabia/` | Drilling & wells leadership |
+| `/project-epc-leadership-saudi-arabia/` | Project / EPC leadership |
+| `/mining-epcm-recruitment-saudi-arabia/` | Mining & EPCM |
+| `/commissioning-startup-saudi-arabia/` | Commissioning & start-up (permanent / staff only) |
+| `/ar-sa/` | Arabic (RTL) page for KSA decision-makers, with Arabic contact section |
+| `/about/`, `/contact/`, `/contact/sent/` | About, mandate form, form thank-you |
+| `/privacy-policy/`, `/terms/`, `404.html` | Legal and error pages |
+| `css/`, `js/` | Styles; `js/contact-triage.js` (contact-form triage) |
+| `_headers`, `_redirects` | Cloudflare Pages headers and 301/308 redirects (legacy Drupal/WordPress paths, `.html` aliases) |
+| `sitemap.xml`, `robots.txt`, `llms.txt`, IndexNow key `.txt` | Crawl/discovery files |
+| `cc-consent.js`, `.well-known/security.txt` | Consent banner; security contact |
 
-## URLs
+URLs use folder `index.html` with trailing slashes (`/about/`); canonicals, `og:url`, JSON-LD, sitemap and internal links all use `https://www.gasandoilrecruitment.com/…/`.
 
-Folder `index.html` pages. Cloudflare Pages 308s the extensionless form (`/about`) onto the trailing-slash 200 URL (`/about/`). Canonicals, `og:url`, JSON-LD page URLs, sitemap `<loc>` values, and in-links use that 200 form — we did not flatten files to fight the slash redirect. `_redirects` keeps `.html` aliases as 308 (now landing on the slash 200 URL) and 301s retired Drupal/WordPress paths (plus trailing-slash and `/gasandoilrecruitment/` twins) onto hub URLs. Leftover `/partners` still 308s to `/about/`. The retired generic O&G path `/oil-and-gas-recruitment-saudi-arabia` 301s to `/` (its `.html` alias stays 308).
+## Deploy
 
-Canonical, `og:url`, JSON-LD, `sitemap.xml` `<loc>` values, `robots.txt` `Sitemap:`, and `llms.txt` links use `https://www.gasandoilrecruitment.com/` with trailing slashes on inner pages. Contact email stays `info@gasandoilrecruitment.com`. Office remains Headquarters — London (no Malaysia). Visible London desk text and schema telephone are `+44 20 3318 2020`; `tel:` stays `tel:+442033182020`.
+Cloudflare Pages, **Git-connected**. No build step (framework: none, output: `/`). Merging to `main` deploys production automatically; every other branch/PR gets a preview at `https://<branch>.gasandoilrecruitment.pages.dev`. Roll back from the Pages dashboard (Deployments → previous → Rollback) or by reverting the PR.
 
-IndexNow key file is not in this repo yet — add after the custom domain is attached.
+## Forms
 
-## Hub map (locked 3 Sep 2026)
+The mandate form on `/contact/` posts to **FormSubmit** and lands on `/contact/sent/`. Don't change the form action or field names without a real test submission (owner approval needed).
 
-| Path | Primary query |
-| --- | --- |
-| `/` | recruitment agencies in saudi arabia |
-| `/executive-recruitment-saudi-arabia/` | executive recruitment saudi arabia |
-| `/drilling-wells-leadership-saudi-arabia/` | drilling superintendent recruitment saudi arabia |
-| `/project-epc-leadership-saudi-arabia/` | oil and gas project director recruitment saudi arabia |
-| `/mining-epcm-recruitment-saudi-arabia/` | mining engineer and EPCM recruitment Saudi Arabia |
-| `/commissioning-startup-saudi-arabia/` | commissioning manager recruitment saudi arabia (perm / staff only) |
-| `/about/` `/contact/` | House and NAP |
+## Consent, tracking and security
 
-Homepage `/` primary retargeted on Salman’s sign-off, 1 Oct 2026. Supporting, not primary: international recruitment agencies in saudi arabia (British / international desk). The public page stays Western oil and gas and energy leadership for KSA employers — the broader phrase is the search head, not a generic-agency positioning.
+- **`cc-consent.js`** (self-hosted, loaded first in every `<head>`): cookie banner with equal-weight Accept/Reject, Google Consent Mode v2 **default denied**; GA4 runs cookieless until Accept; **WhatConverts call tracking loads only after Accept** (pages flagged `data-wc="1"`). "Cookie settings" link in the footer reopens it.
+- **`_headers`**: `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options: DENY`, and a **`Content-Security-Policy-Report-Only`** policy (Google tag/Analytics, WhatConverts, FormSubmit, Cloudflare). Report-only: it does not block. If you add a third-party script, add its host to the CSP.
+- **`.well-known/security.txt`**: security contact (renew `Expires` yearly).
+- Never commit secrets, API keys or personal data.
 
-Existing GCC markets (Dubai, Abu Dhabi, Bahrain, Qatar) are named once in the footer as service area. No city clone pages. Do not target the generic “oil and gas recruitment agencies in saudi arabia” head term.
+## Brand facts (keep consistent)
 
-## Brand contacts (do not replace)
+London desk `+44 20 3318 2020` (`tel:+442033182020`); contact `info@gasandoilrecruitment.com`; office and other details as shown in the site footer. Locked page titles/H1s and the hub keyword map are not changed without owner sign-off.
 
-- +44 20 3318 2020
-- info@gasandoilrecruitment.com
-- Office: Headquarters — London, United Kingdom · Elmtree Court, Elm Tree Road, London NW8 9JT
+## Contributing
+
+All changes via **pull request to `main`** (no direct pushes). Check the PR's Cloudflare preview (pages 200, form action unchanged, consent banner, `/ar-sa/`) before merging. Squash-merge, then delete the branch.
