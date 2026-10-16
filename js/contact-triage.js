@@ -160,6 +160,19 @@
     syncSubject();
     syncReplyTo();
     syncNext();
+    try {
+      sessionStorage.setItem("gor_lead", JSON.stringify({
+        triage: selectedTriage(),
+        lane: laneSelect ? laneSelect.value : ""
+      }));
+    } catch (e) {}
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "form_submit_attempt", {
+        triage: selectedTriage(),
+        lane: laneSelect ? laneSelect.value : "",
+        transport_type: "beacon"
+      });
+    }
   });
 
   syncForm();
