@@ -9,6 +9,13 @@
 /mining-epcm-recruitment-saudi-arabia.html /mining-epcm-recruitment-saudi-arabia/ 308
 /commissioning-startup-saudi-arabia.html /commissioning-startup-saudi-arabia/ 308
 /oil-and-gas-recruitment-saudi-arabia.html / 308
+/privacy-policy.html /privacy-policy/ 308
+/terms.html /terms/ 308
+/ar-sa.html /ar-sa/ 308
+
+# Short alias for the privacy page (one hop to the live trailing-slash URL)
+/privacy /privacy-policy/ 301
+/privacy/ /privacy-policy/ 301
 
 # Leftover hub alias not in the Drupal/WP equity map
 /partners /about/ 308
