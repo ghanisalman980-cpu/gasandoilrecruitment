@@ -34,8 +34,18 @@
   <meta property="og:description" content="British London specialist oil and gas recruitment desk for scarce Western seniors into Saudi Arabia.">
   <meta property="og:url" content="https://www.gasandoilrecruitment.com/about/">
   <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="https://www.gasandoilrecruitment.com/assets/brand/og-share-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gas and Oil Recruitment – specialist oil &amp; gas recruitment for Saudi Arabia, London HQ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.gasandoilrecruitment.com/assets/brand/og-share-1200x630.png">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/brand/icon-16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/assets/brand/icon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/icon-48.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="/assets/brand/icon-512.png" type="image/png" sizes="512x512">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <style>
 :root {
@@ -147,13 +157,44 @@ select:focus-visible,
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 0;
   text-decoration: none;
   color: var(--cream);
-  min-width: 12rem;
 }
 
 .wordmark:hover {
   color: var(--gold-soft);
+}
+
+.wordmark-logo {
+  display: block;
+  height: 44px;
+  width: auto;
+  max-width: none;
+  aspect-ratio: 344.02 / 48;
+}
+
+@media (max-width: 1023px) {
+  .wordmark-logo {
+    height: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wordmark-logo {
+    height: 32px;
+    aspect-ratio: 235.68 / 32;
+  }
+}
+
+@media (max-width: 330px) {
+  .wordmark-logo {
+    height: 32px;
+    aspect-ratio: 33.59 / 48;
+  }
 }
 
 .wordmark-kicker {
@@ -187,6 +228,11 @@ select:focus-visible,
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.site-nav {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .site-nav ul {
@@ -691,7 +737,7 @@ input[type="checkbox"] {
         "url": "https://www.gasandoilrecruitment.com/",
         "email": "info@gasandoilrecruitment.com",
         "telephone": "+44 20 3318 2020",
-        "logo": "https://www.gasandoilrecruitment.com/apple-touch-icon.png",
+        "logo": "https://www.gasandoilrecruitment.com/assets/brand/icon-512.png",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+44 20 3318 2020",
@@ -755,8 +801,12 @@ input[type="checkbox"] {
   </div>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="wordmark" href="/" rel="home">
-        <span class="wordmark-name">Gas and Oil Recruitment</span>
+      <a class="wordmark" href="/" rel="home" aria-label="Gas and Oil Recruitment – home">
+        <picture>
+          <source media="(max-width: 330px)" srcset="/assets/brand/logo-icon-on-dark.svg">
+          <source media="(max-width: 767px)" srcset="/assets/brand/logo-header-compact-on-dark.svg">
+          <img class="wordmark-logo" src="/assets/brand/logo-header-on-dark.svg" alt="Gas and Oil Recruitment" width="315" height="44" decoding="async">
+        </picture>
       </a>
       <input class="nav-toggle" type="checkbox" id="nav-toggle">
       <label class="nav-toggle-label" for="nav-toggle">Menu</label>
