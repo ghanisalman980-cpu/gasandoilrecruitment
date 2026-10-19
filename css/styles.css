@@ -466,6 +466,21 @@ ul.plain li + li {
   text-decoration: underline;
 }
 
+.footer-linkedin {
+  color: var(--gold-soft);
+}
+
+.footer-linkedin:hover,
+.footer-linkedin:focus-visible {
+  color: var(--gold-soft);
+  text-decoration: underline;
+}
+
+.footer-linkedin:focus-visible {
+  outline: 3px solid var(--gold-soft);
+  outline-offset: 3px;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
