@@ -107,13 +107,44 @@ select:focus-visible,
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 0;
   text-decoration: none;
   color: var(--cream);
-  min-width: 12rem;
 }
 
 .wordmark:hover {
   color: var(--gold-soft);
+}
+
+.wordmark-logo {
+  display: block;
+  height: 44px;
+  width: auto;
+  max-width: none;
+  aspect-ratio: 344.02 / 48;
+}
+
+@media (max-width: 1023px) {
+  .wordmark-logo {
+    height: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wordmark-logo {
+    height: 32px;
+    aspect-ratio: 235.68 / 32;
+  }
+}
+
+@media (max-width: 330px) {
+  .wordmark-logo {
+    height: 32px;
+    aspect-ratio: 33.59 / 48;
+  }
 }
 
 .wordmark-kicker {
@@ -147,6 +178,11 @@ select:focus-visible,
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.site-nav {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .site-nav ul {
