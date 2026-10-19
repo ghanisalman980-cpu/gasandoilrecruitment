@@ -57,6 +57,8 @@
   --navy-deep: #08141f;
   --gold: #b8923a;
   --gold-soft: #d4bc7a;
+  --gold-text: #745c25; /* brand gold darkened for small text: WCAG AA on cream/paper/white */
+  --stone-text: #5b544a; /* stone darkened for small text on the hero tint */
   --cream: #f4efe4;
   --paper: #faf7f1;
   --stone: #6f675c;
@@ -97,7 +99,7 @@ a {
 }
 
 a:hover {
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 a:focus-visible,
@@ -298,7 +300,7 @@ select:focus-visible,
 
 .kicker {
   margin: 0 0 0.7rem;
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 0.78rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -430,7 +432,7 @@ main {
 }
 
 .lane span {
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 0.9rem;
 }
 
@@ -465,11 +467,11 @@ ul.plain li + li {
 .crumbs {
   margin: 0 0 0.85rem;
   font-size: 0.88rem;
-  color: var(--stone);
+  color: var(--stone-text);
 }
 
 .crumbs a {
-  color: var(--stone);
+  color: var(--stone-text);
 }
 
 .crumbs ol {
@@ -484,7 +486,7 @@ ul.plain li + li {
 .crumbs li:not(:last-child)::after {
   content: "/";
   margin-left: 0.35rem;
-  color: var(--stone);
+  color: var(--stone-text);
 }
 
 .callout {
@@ -564,6 +566,11 @@ ul.plain li + li {
   padding-top: 1rem;
   color: #c9c0b3;
   font-size: 0.85rem;
+}
+
+.legal a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 label {
@@ -759,6 +766,8 @@ input[type="checkbox"] {
       "url": "https://www.gasandoilrecruitment.com/ar-sa/",
       "name": "شركات توظيف في السعودية | استقطاب مهندسين غربيين للنفط والغاز",
       "inLanguage": "ar-SA",
+      "datePublished": "2026-10-11",
+      "dateModified": "2026-10-12",
       "isPartOf": {
         "@id": "https://www.gasandoilrecruitment.com/#website"
       },
