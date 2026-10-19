@@ -1,10 +1,13 @@
-/* Lightweight self-hosted consent banner + Google Consent Mode v2 (default denied). SEC-06, 12 Oct 2026. */
+/* Lightweight self-hosted consent banner + Google Consent Mode v2 (default denied). SEC-06, 12 Oct 2026.
+   Deferred so it does not block first paint. The inline head snippet queues consent defaults before gtag. */
 (function(){
   var KEY='cc_consent_v1', WC_SRC='https://s.ksrndkehqnwntyxlhgto.com/174263.js';
-  var CS=document.currentScript; var PRIV=(CS&&CS.getAttribute('data-privacy'))||'/privacy-policy/'; var HAS_WC=!!(CS&&CS.getAttribute('data-wc')==='1');
+  var CS=document.currentScript || document.querySelector('script[src*="cc-consent.js"]'); var PRIV=(CS&&CS.getAttribute('data-privacy'))||'/privacy-policy/'; var HAS_WC=!!(CS&&CS.getAttribute('data-wc')==='1');
   window.dataLayer=window.dataLayer||[];
   window.gtag=window.gtag||function(){dataLayer.push(arguments);};
-  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
+  var consentDefaultQueued=false, i, queued;
+  for(i=0;i<dataLayer.length;i++){queued=dataLayer[i]; if(queued&&queued[0]==='consent'&&queued[1]==='default'){consentDefaultQueued=true; break;}}
+  if(!consentDefaultQueued){gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});}
   function get(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
   function set(v){try{localStorage.setItem(KEY,v);}catch(e){}}
   var wcLoaded=false;
