@@ -1,4 +1,4 @@
-Contact: mailto:hello@gasandoilrecruitment.com
+Contact: mailto:info@gasandoilrecruitment.com
 Expires: 2027-10-12T00:00:00.000Z
 Preferred-Languages: en
 Canonical: https://www.gasandoilrecruitment.com/.well-known/security.txt
